@@ -10,7 +10,12 @@ namespace Lesson2
     {
         void test()
         {
-            IsEven(2)
+            IsEven(2);
+
+            Average(new int[] {1, 2, 3, 4, 5, 6});
+
+            IsPalindrome("Madam");
+            
         }
     }
 }

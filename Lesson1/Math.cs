@@ -62,5 +62,26 @@ namespace Lesson1
             return sum / numbers.Length;
         }
 
+        public bool IsPalindrome(string word)
+        {
+            if (string.IsNullOrEmpty(word))
+                return false;
+            string cleaned = word.ToLower().Replace(" ", "");
+            int left = 0;
+            int right = cleaned.Length - 1;
+
+            while (left < right)
+            {
+                if (cleaned[left] != cleaned[right])
+                    return false;
+                left++;
+                right--;
+            }
+            return true;
+        }
+
+
+
+
     }
 }

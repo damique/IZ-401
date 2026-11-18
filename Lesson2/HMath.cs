@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lesson2
 {
-    internal class HMath
+    internal class HMath:Lesson1.MMath
     {
+        void test()
+        {
+            IsEven(2)
+        }
     }
 }

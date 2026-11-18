@@ -15,6 +15,40 @@ namespace Lesson1
             {
                 sum += number;
             }
+            return sum;
         }
+
+        public double Max(int[] numbers)
+        {
+            double max = 0;
+            foreach(int number in numbers)
+            {
+                if(number > max)
+                    max = number;
+            }
+            return max;
+        }
+
+        public double Min(int[] numbers)
+        {
+            double min = numbers[0];
+            foreach (int number in numbers)
+            { 
+                if (number < min)
+                    min = number;
+            }
+            return min;
+        }
+
+        public double factorial(int number)
+        {
+            double result = 1;
+            for (int i = number; i >= 1; i--)
+                result *= i;
+            return result;
+        }
+
+
+
     }
 }

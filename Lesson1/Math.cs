@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lesson1
 {
-    internal class Math
+    public class Math
     {
         public double Sum(int[] numbers)
         {
